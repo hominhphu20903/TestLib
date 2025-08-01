@@ -45,5 +45,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation("com.github.hominhphu20903:TestLib:1.0.2")
+    implementation("com.github.hominhphu20903:TestLib:1.0.3")
 }

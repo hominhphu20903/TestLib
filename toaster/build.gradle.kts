@@ -46,11 +46,11 @@ dependencies {
 afterEvaluate {
     publishing {
         publications {
-            create<MavenPublication>("maven") {
-                groupId = "com.mvvm.testlib"
-                artifactId = "toaster"
-                version = "1.0.2"
+            create<MavenPublication>("release") {
                 from(components["release"])
+                groupId = "com.github.hominhphu20903"
+                artifactId = "toaster"
+                version = "1.0.4"
             }
         }
     }
