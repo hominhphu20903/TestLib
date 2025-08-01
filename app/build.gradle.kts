@@ -1,7 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    id("maven-publish")
 }
 
 android {
@@ -33,18 +32,6 @@ android {
     }
     kotlinOptions {
         jvmTarget = "11"
-    }
-}
-
-afterEvaluate {
-    publishing {
-        publications {
-            create<MavenPublication>("maven") {
-                groupId = "com.mvvm.testlib"
-                artifactId = "toaster"
-                version = "1.0.0"
-            }
-        }
     }
 }
 
