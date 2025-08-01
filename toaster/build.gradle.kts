@@ -50,6 +50,7 @@ afterEvaluate {
                 groupId = "com.mvvm.testlib"
                 artifactId = "toaster"
                 version = "1.0.0"
+                from(components["release"])
             }
         }
     }
